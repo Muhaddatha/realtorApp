@@ -1,0 +1,118 @@
+﻿@model MVCRealtorApp.Models.House
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>House</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Zip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Zip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearBuilt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearBuilt)
+        </dd>
+
+        <dd>
+            @Html.DisplayFor(model => model.Property)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SquareFeet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SquareFeet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumBedroom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumBedroom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumGarage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumGarage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RealtorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RealtorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RealtorPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RealtorPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RealtorEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RealtorEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumBathroom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumBathroom)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

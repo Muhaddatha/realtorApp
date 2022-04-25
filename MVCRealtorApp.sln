@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCRealtorApp", "MVCRealtorApp\MVCRealtorApp.csproj", "{2BFB1673-239B-496C-BC49-7183F1BEC279}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BFB1673-239B-496C-BC49-7183F1BEC279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BFB1673-239B-496C-BC49-7183F1BEC279}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BFB1673-239B-496C-BC49-7183F1BEC279}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BFB1673-239B-496C-BC49-7183F1BEC279}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B7473BC-30C3-41BB-ADBD-CC5A1F6D43CD}
+	EndGlobalSection
+EndGlobal

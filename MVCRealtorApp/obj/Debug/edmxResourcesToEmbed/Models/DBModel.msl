@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MVCRealtorDBModelStoreContainer" CdmEntityContainer="DbModels">
+    <EntitySetMapping Name="Houses">
+      <EntityTypeMapping TypeName="MVCRealtorDBModel.House">
+        <MappingFragment StoreEntitySet="House">
+          <ScalarProperty Name="Property" ColumnName="Property" />
+          <ScalarProperty Name="NumBathroom" ColumnName="NumBathroom" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="YearBuilt" ColumnName="YearBuilt" />
+          <ScalarProperty Name="SquareFeet" ColumnName="SquareFeet" />
+          <ScalarProperty Name="NumBedroom" ColumnName="NumBedroom" />
+          <ScalarProperty Name="NumGarage" ColumnName="NumGarage" />
+          <ScalarProperty Name="RealtorName" ColumnName="RealtorName" />
+          <ScalarProperty Name="RealtorPhone" ColumnName="RealtorPhone" />
+          <ScalarProperty Name="RealtorEmail" ColumnName="RealtorEmail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

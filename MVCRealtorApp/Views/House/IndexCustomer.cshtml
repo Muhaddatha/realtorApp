@@ -1,0 +1,101 @@
+﻿@model IEnumerable<MVCRealtorApp.Models.House>
+
+@{
+    ViewBag.Title = "Available houses";
+}
+
+<h2>Browse Houses</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Zip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YearBuilt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SquareFeet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumBedroom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumGarage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RealtorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RealtorPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RealtorEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumBathroom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Property)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Zip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YearBuilt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SquareFeet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumBedroom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumGarage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RealtorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RealtorPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RealtorEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumBathroom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Property)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "DetailsCustomer", new { id=item.Id }) |
+            @Html.ActionLink("ContactRealtor", "ContactRealtor", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

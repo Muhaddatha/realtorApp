@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MVCRealtorDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="House">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Price" Type="float" />
+          <Property Name="Address" Type="varchar" MaxLength="50" />
+          <Property Name="City" Type="varchar" MaxLength="50" />
+          <Property Name="Zip" Type="int" />
+          <Property Name="YearBuilt" Type="int" />
+          <Property Name="SquareFeet" Type="int" />
+          <Property Name="NumBedroom" Type="int" />
+          <Property Name="NumBathroom" Type="int" />
+          <Property Name="NumGarage" Type="int" />
+          <Property Name="RealtorName" Type="varchar" MaxLength="50" />
+          <Property Name="RealtorPhone" Type="varchar" MaxLength="50" />
+          <Property Name="RealtorEmail" Type="varchar" MaxLength="50" />
+          <Property Name="Property" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="MVCRealtorDBModelStoreContainer">
+          <EntitySet Name="House" EntityType="Self.House" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MVCRealtorDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="House">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Price" Type="Double" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Zip" Type="Int32" />
+          <Property Name="YearBuilt" Type="Int32" />
+          <Property Name="SquareFeet" Type="Int32" />
+          <Property Name="NumBedroom" Type="Int32" />
+          <Property Name="NumGarage" Type="Int32" />
+          <Property Name="RealtorName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RealtorPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RealtorEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NumBathroom" Type="Int32" />
+          <Property Name="Property" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="DbModels" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Houses" EntityType="Self.House" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MVCRealtorDBModelStoreContainer" CdmEntityContainer="DbModels">
+          <EntitySetMapping Name="Houses">
+            <EntityTypeMapping TypeName="MVCRealtorDBModel.House">
+              <MappingFragment StoreEntitySet="House">
+                <ScalarProperty Name="Property" ColumnName="Property" />
+                <ScalarProperty Name="NumBathroom" ColumnName="NumBathroom" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
+                <ScalarProperty Name="YearBuilt" ColumnName="YearBuilt" />
+                <ScalarProperty Name="SquareFeet" ColumnName="SquareFeet" />
+                <ScalarProperty Name="NumBedroom" ColumnName="NumBedroom" />
+                <ScalarProperty Name="NumGarage" ColumnName="NumGarage" />
+                <ScalarProperty Name="RealtorName" ColumnName="RealtorName" />
+                <ScalarProperty Name="RealtorPhone" ColumnName="RealtorPhone" />
+                <ScalarProperty Name="RealtorEmail" ColumnName="RealtorEmail" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
